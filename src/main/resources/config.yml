@@ -1,0 +1,83 @@
+# WorldStudioTalk 配置文件
+# World Studio 制作
+
+# 插件设置
+plugin:
+  # 是否启用调试模式
+  debug: false
+  # 插件语言
+  language: "zh_CN"
+
+# 聊天室设置
+chatroom:
+  # 最大聊天室数量
+  max-rooms: 50
+  # 每个玩家最多创建的聊天室数量
+  max-rooms-per-player: 5
+  # 聊天室最大成员数
+  max-members: 100
+  # 聊天室名称最大长度
+  max-name-length: 20
+  # 聊天室名称最小长度
+  min-name-length: 3
+  # 默认聊天室
+  default-room: "全服大厅"
+
+# 跨服务器通信设置
+network:
+  # 是否启用跨服务器通信
+  enabled: true
+  # 服务器ID (每个服务器必须唯一)
+  server-id: "server1"
+  # 服务器显示名称
+  server-name: "主服务器"
+  # 通信端口
+  port: 25580
+  # 绑定IP (0.0.0.0 表示绑定所有接口)
+  bind-ip: "0.0.0.0"
+  # 连接其他服务器的配置
+  connections:
+    # 示例配置
+    # server2:
+    #   host: "192.168.1.100"
+    #   port: 25581
+    #   name: "生存服务器"
+
+# 消息格式
+message:
+  # 聊天室消息格式
+  chat-format: "&7[&b{room}&7] &f{player}&7: &f{message}"
+  # 跨服务器消息格式
+  cross-server-format: "&7[&e{server}&7] &7[&b{room}&7] &f{player}&7: &f{message}"
+  # 系统消息格式
+  system-format: "&7[&aWST&7] &f{message}"
+  # 错误消息格式
+  error-format: "&7[&cWST&7] &c{message}"
+
+# 消息文本
+messages:
+  help:
+    - "&7========== &bWorldStudioTalk &7=========="
+    - "&e/wst help &7- 显示帮助"
+    - "&e/wst list &7- 查看聊天室列表"
+    - "&e/wst join <房间名> &7- 加入聊天室"
+    - "&e/wst add <房间名> &7- 创建聊天室"
+    - "&e/wst del <房间名> &7- 删除聊天室"
+    - "&e/wst exit &7- 离开当前聊天室"
+    - "&7===============================&r"
+  
+  no-permission: "您没有权限使用此命令！"
+  room-not-found: "聊天室 &e{room} &c不存在！"
+  already-in-room: "您已经在聊天室 &e{room} &c中了！"
+  not-in-room: "您当前不在任何聊天室中！"
+  room-created: "成功创建聊天室 &e{room}&a！"
+  room-deleted: "成功删除聊天室 &e{room}&a！"
+  joined-room: "成功加入聊天室 &e{room}&a！"
+  left-room: "成功离开聊天室 &e{room}&a！"
+  room-exists: "聊天室 &e{room} &c已经存在！"
+  room-name-too-long: "聊天室名称过长！最大长度为 {max} 个字符。"
+  room-name-too-short: "聊天室名称过短！最小长度为 {min} 个字符。"
+  max-rooms-reached: "已达到最大聊天室数量限制！"
+  max-rooms-per-player-reached: "您已创建了最大数量的聊天室！"
+  cannot-delete-default: "无法删除默认聊天室！"
+  cannot-delete-not-owner: "只有聊天室创建者可以删除聊天室！"

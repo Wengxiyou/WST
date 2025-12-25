@@ -1,0 +1,9 @@
+com\world\wst\network\NetworkMessage$Type.class
+com\world\wst\network\NetworkMessage.class
+com\world\wst\command\CommandHandler.class
+com\world\wst\manager\NetworkManager$1.class
+com\world\wst\WorldStudioTalk.class
+com\world\wst\data\ChatRoom.class
+com\world\wst\manager\ConfigManager.class
+com\world\wst\manager\ChatRoomManager.class
+com\world\wst\manager\NetworkManager.class

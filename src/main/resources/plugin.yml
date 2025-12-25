@@ -1,0 +1,27 @@
+name: WorldStudioTalk
+version: ${project.version}
+main: com.world.wst.WorldStudioTalk
+api-version: 1.20
+author: World Studio
+description: 聊天室插件 - 支持跨服务器文字聊天互通
+website: https://worldstudio.com
+
+commands:
+  wst:
+    description: 聊天室主命令
+    usage: /wst <help|list|join|add|del|exit> [参数]
+    aliases: [worldstudiotalk, chat]
+
+permissions:
+  wst.use:
+    description: 使用聊天室基本功能
+    default: true
+  wst.admin:
+    description: 管理聊天室权限
+    default: op
+  wst.create:
+    description: 创建聊天室权限
+    default: true
+  wst.delete:
+    description: 删除聊天室权限
+    default: op
