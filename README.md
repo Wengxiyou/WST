@@ -46,8 +46,8 @@
 
 1. **克隆项目**
    ```bash
-   git clone <项目地址>
-   cd WorldStudioTalk
+   git clone https://github.com/Wengxiyou/WST
+   cd WST
    ```
 
 2. **编译插件**
