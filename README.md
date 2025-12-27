@@ -279,13 +279,13 @@ plugin:
 
 ## 📄 许可证
 
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+本项目采用 GPL3.0 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
 ## 👥 作者
 
 **World Studio**
-- 官网: https://worldstudio.com
-- 邮箱: support@worldstudio.com
+- 官网: https://www.wrldg.top
+- 邮箱: support@wrldg.top
 
 ---
 
